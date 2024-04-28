@@ -21,7 +21,7 @@ h1 {
     color: #fff;
 }
 .container {
-    width: 400px;
+    max-width: 400px;
 }
 .input-container {
     background-color: #fff;
@@ -69,7 +69,6 @@ button:hover {
 }
 .text {
     background-color: #00471b;
-    height: 160px;
     border-radius: 15px;
     margin-top: 25px;
     font-size: 1.5rem;
@@ -84,6 +83,12 @@ span {
 }
 .text p {
     text-align: justify;
+    text-align-last: left;
     margin: 0 auto;
     font-size: 1.5rem;
+}
+@media (max-width: 400px) {
+    .text p{
+        font-size: 1.3rem;
+    }
 }
